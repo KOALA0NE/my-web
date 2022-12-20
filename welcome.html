@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اهلا وسهلا</title>
+</head>
+<body>
+    <h1>اهلا وسهلا ,الرجاء اكتب اسمك هنا</h1>
+    <input id="send">  <br> <br>
+    <button onclick="submit()"> ارسال </button>
+    <h1 id="massage">  </h1>
+
+    <style>
+        body{ background-color: darkcyan; text-align: center;color: azure;}
+    </style>
+    <script>
+        function submit(){
+            let send = document.querySelector("#send");
+            let massage = document.querySelector("#massage");
+            massage.innerHTML = "مرحبا بك , " + send.value;
+
+        }
+
+    </script>
+    
+</body>
+</html>
